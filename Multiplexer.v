@@ -4,7 +4,7 @@ module multiplexer(input1,input2,select,result);
     input [63:0] input1;
     input [63:0] input2;
     output reg [63:0] outcome;
-    always @(input1,input2,select)
+    always @(input1,input2,select) without alyas
     begin
     if(select)
         outcome=input2;
