@@ -1,5 +1,5 @@
 
-module Register
+module Register (data_input,reset,clk)
 
   parameter n = 64
   input [n-1 : 0] data_input,
