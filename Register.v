@@ -1,6 +1,5 @@
-
 module Register (data_input,reset,clk)
-
+  parameter delay = 60
   parameter n = 64
   input [n-1 : 0] data_input,
   input reset,
