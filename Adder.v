@@ -1,4 +1,4 @@
-module Adder
+module Adder (cin,y,z);
   parameter n = 64
   parameter delay = 60
 
