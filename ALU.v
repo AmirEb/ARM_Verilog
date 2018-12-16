@@ -1,10 +1,10 @@
 module ALU(input1, input2, operation, output1 );
-	input [63:0] num1;
-	input [63:0] num2;
+	input [63:0] input1;
+	input [63:0] input2;
 	input [3:0] operation;
 	output reg z;
 	output reg [63:0] output;
-	always @(num1 , num2 , operation) begin 
+	always @(input1 , input2 , operation) begin 
 	
 		case(operation)
 			4'b0000:output1 = input1 & input2;
