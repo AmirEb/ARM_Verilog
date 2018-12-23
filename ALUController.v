@@ -4,7 +4,7 @@ module ALUController(ALUOp, Opcode, code);
 	input [10:0] OpCode;
 	output reg [3:0] code;
 	always @(ALUOp, OpCode) begin
-		 casex(ALUOp) 
+		 case(ALUOp) 
 		     2'b00: code = 4'b0010;
 		     2'b01: code = 4'b0111;
 		     2'b10:
