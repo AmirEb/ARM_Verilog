@@ -11,7 +11,7 @@ module memory(clk, address, data_in, read, write, data_out);
 	assign data_out = read ? memory[address] : 64'bz;
 	
 	always @(posedge clk) 
-		if(write == 1'b1)
+		if(write == 1)
 			memory[address] <= data_in;
 		end
 	end 
