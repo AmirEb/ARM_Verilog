@@ -1,4 +1,4 @@
-module ALU_Control(ALUOp, OpCode, ALUIn);
+module ALUController(ALUOp, Opcode, code);
 	
 	input [1:0] ALUOp;
 	input [10:0] OpCode;
@@ -8,7 +8,7 @@ module ALU_Control(ALUOp, OpCode, ALUIn);
 		     2'b00: code = 4'b0010;
 		     2'b01: code = 4'b0111;
 		     2'b10:
-			casex(Op_Code)
+			casex(OpCode)
 				11'b11xxxxxxxxx: code = 4'b0110;
 				11'b101xxxxxxxx: code = 4'b0001;
 				11'b10001010xxx: code = 4'b0000;
