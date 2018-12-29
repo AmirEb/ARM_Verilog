@@ -1,4 +1,4 @@
-module ALU(input1, input2, operation, output1 );
+module ALU(input1, input2, operation, output1,z );
 	input [63:0] input1;
 	input [63:0] input2;
 	input [3:0] operation;
