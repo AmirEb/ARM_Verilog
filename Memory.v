@@ -13,6 +13,6 @@ module memory(clk, address, data_in, read, write, data_out);
 	always @(posedge clk) 
 		if(write == 1)
 			memory[address] <= data_in;
-		end
+		
 	end 
 endmodule
