@@ -1,7 +1,7 @@
 module RegisterBank (clock, write,input1, input2, input3, input_data, output1, output2);
 	input clock;
 	input write;
-	input [5 : 0] input1, input2, input3;
+	input [4 : 0] input1, input2, input3;
 	input [63 : 0] input_data;
 	
 	output[63 : 0] output1, output2;
@@ -16,3 +16,4 @@ module RegisterBank (clock, write,input1, input2, input3, input_data, output1, o
 			registers[input3] = input_data;
 	end
 endmodule
+
