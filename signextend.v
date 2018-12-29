@@ -2,7 +2,7 @@ module SignExtend(instruction, output_data);
 
 	input [31:0] instruction;
 	output reg [63:0] output_data;
-	wire opcode = instruction[31:30];
+	wire opcode = instruction[30];
 
 	always @ (instruction) begin
 		case(opcode)
