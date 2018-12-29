@@ -28,6 +28,7 @@ module InstructionMemory( input_address , output_data);
 		memory[13] <= 8'h10;
 		memory[14] <= 8'h00;
 		memory[15] <= 8'hF8;
+		end
 
 	assign output_data[7 : 0] = memory[input_address];
 	assign output_data[15 : 8] = memory[input_address + 1];
