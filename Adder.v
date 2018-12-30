@@ -1,12 +1,8 @@
-module Adder (cin,y,z);
-  parameter delay = 60
+module Adder #(parameter n = 64) (input1, input2, outputdata);
+	
+	input [n - 1 : 0] input1, input2;
+	output[n - 1 : 0] outputdata;
 
-  input [63:0] z,
-  input [63:0] y,
-  input cin,
-  output [63:0] x,
-  output cout;
-  
-  assign {cout, x} = z + y + cin;
-  
+	assign output_data = input1 + input2;
+
 endmodule
