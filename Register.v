@@ -1,15 +1,15 @@
-module Register (data_input,reset,clk)
+module Register #(parameter n = 64) (data_input,reset,clk,data_output)
   parameter delay = 60
 
-  input [63 : 0] data_input,
+  input [n-1 : 0] data_input,
   input reset,
   input clk,
-  output reg [63 : 0] data_output
+  output reg [n-1 : 0] data_output;
 
   always @(posedge clk)begin
     if (reset)
-      data_output <= 0 {63{1'b0}};
+      data_output =0;
     else
-      data_output <= data_input;   
+      data_output = data_input;   
     end    
 endmodule 
