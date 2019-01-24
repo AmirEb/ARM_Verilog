@@ -1,3 +1,1 @@
-ARM CPU written with Verilog
-
-Amir Ebrahimian
+ُA Simple ARM CPU written with Verilog
